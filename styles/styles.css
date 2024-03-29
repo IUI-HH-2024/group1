@@ -1,0 +1,104 @@
+        img		{ 
+			max-width: 100%;
+		}
+		
+		
+		header {
+            grid-area: header;
+            background-color: yellow;
+        }
+
+        nav {
+            grid-area: nav;
+            background-color: gray;
+        }
+
+        main {
+            grid-area: main;
+            background-color: orange;
+        }
+
+        aside {
+            grid-area: aside;
+            background-color: bisque;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: green;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                'header header header header header aside'
+                'nav nav main main main aside'
+                'nav nav main main main aside'
+                'nav nav main main main aside'
+				'footer footer footer footer footer footer';
+            grid-gap: .5em;
+            padding: .5em;
+			
+			max-width: 62em;
+			margin: auto;
+        }
+
+
+        ul li {
+            list-style-type: none;
+        }
+
+
+
+/* Below are two arbitrary break points. Please adjust to fit your content's needs. You can have more than two breakpoints. You want your site to be usable at ALL viewport widths. */
+
+
+
+        /*FIRST BREAK POINT === tablet  Note: This is an arbitrary break point! Change it to fit your needs. */
+        @media only screen and (max-width : 900px) {
+            body {
+                background: blue;
+            }
+
+            .grid-container {
+                display: grid;
+                grid-template-areas:
+                    'header header header header header header'
+					'nav nav nav nav nav nav'
+                    'main main main main aside aside'
+                    'footer footer footer footer footer footer';
+                grid-gap: .5em;
+                padding: .5em;
+            }
+
+            ul li {
+                display: inline-block;
+            }
+
+        }
+
+        /*SECOND BREAK POINT === mobile  Note: This is an arbitrary break point! Change it to fit your needs. */
+        @media only screen and (max-width : 600px) {
+
+            body {
+                background: fuchsia;
+            }
+
+            .grid-container {
+                display: grid;
+                grid-template-areas:
+                    'nav nav nav nav nav nav'
+                    'header header header header header header'
+                    'main main main main main main'
+                    'aside aside aside aside aside aside'
+                    'footer footer footer footer footer footer';
+                grid-gap: .5em;
+                padding: .5em;
+            }
+
+            ul li {
+                display: inline-block;
+            }
+			
+
+        }
