@@ -1,0 +1,170 @@
+        body {
+            padding: 0px;
+            margin: 0px;
+            background-color: rgb(189, 218, 238);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            line-height: 26px;
+        }
+
+        header {
+            grid-area: header;
+            background-color: rgb(121, 181, 221);
+            padding: 10px;
+            border-bottom: 5px solid black;
+            background-image: url(../images/header_bg.jpg);
+            color: white;
+            text-shadow: 2px 2px 5px black;
+        }
+
+        nav {
+            grid-area: nav;
+        }
+
+        main {
+            grid-area: main;
+            padding: 20px;
+            background-color: white;
+        }
+
+        .banner {
+            grid-area: banner;
+            background-color: white;
+        }
+
+        .content_img img {
+            width: 90%;
+            max-width: 300px;
+        }
+
+        .content_img {
+            text-align: center;
+        }
+
+        .aside1 {
+            grid-area: aside1;
+            padding: 10px;
+        }
+
+        .aside1 img {
+            width: 300px;
+            min-width: 100%;
+            border-bottom: 6px solid black;
+        }
+
+        .aside2 {
+            grid-area: aside2;
+            background-color: rgb(68, 68, 68);
+            color: white;
+            padding: 10px;
+        }
+
+
+        footer {
+            grid-area: footer;
+            background-color: rgb(25, 38, 82);
+            color: white;
+            padding: 10px;
+        }
+
+        .main-grid-container {
+            display: grid;
+            grid-template-areas:
+                'header header header header header header'
+                'nav nav nav nav nav nav'
+                'banner banner banner banner banner banner'
+                'main main main main aside1 aside1'
+                'aside2 aside2 aside2 aside2 aside2 aside2'
+                'footer footer footer footer footer footer';
+            grid-gap: .0em;
+
+            max-width: 82em;
+            /* GIVE CONTAINER A WIDTH AND MARGINS IF YOU DO NOT WANT FULL SCREEN */
+            margin: auto;
+        }
+
+        header div {
+            float: left;
+        }
+
+        .link {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: rgb(25, 38, 82);
+            color: white;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+
+        .logo {
+            height: 100px;
+            border-radius: 100%;
+        }
+
+        header h1 {
+            text-align: center;
+            font-size: 50px;
+            margin: 0px;
+            padding: 30px;
+        }
+
+
+
+        footer a {
+            color: rgb(161, 161, 161);
+            border-radius: 10px;
+            text-decoration: none;
+        }
+
+
+        /*FIRST BREAK POINT === tablet */
+        @media only screen and (max-width : 900px) {
+
+            .main-grid-container {
+                display: grid;
+                grid-template-areas:
+                    'header header header header header header'
+                    'nav nav nav nav nav nav'
+                    'main main main main aside1 aside1'
+                    'aside2 aside2 aside2 aside2 aside2 aside2'
+                    'footer footer footer footer footer footer';
+                grid-gap: .0em;
+            }
+
+            .logo {
+                float: none;
+                height: 100px;
+            }
+
+            header div {
+                text-align: center;
+                width: 100%;
+                float: none;
+            }
+
+            header h1 {
+                font-size: 30px;
+                padding: 5px;
+            }
+
+            .aside2 {
+                text-align: center;
+            }
+
+        }
+
+        /*SECOND BREAK POINT === mobile */
+        @media only screen and (max-width : 600px) {
+
+            .main-grid-container {
+                display: grid;
+                grid-template-areas:
+                    'header header header header header header'
+                    'nav nav nav nav nav nav'
+                    'main main main main main main'
+                    'aside1 aside1 aside1 aside1 aside1 aside1'
+                    'aside2 aside2 aside2 aside2 aside2 aside2'
+                    'footer footer footer footer footer footer';
+                grid-gap: .0em;
+            }
+
+        }
