@@ -1,5 +1,5 @@
        .navbar {
-           background-color: #333333ec;
+           background-color: rgb(57, 40, 204);
            overflow: hidden;
            display: flex;
            /* Use flexbox */
@@ -11,23 +11,24 @@
        .navbar a {
            float: left;
            display: block;
-           color: #f2f2f2;
+           color: #FFDECB;
+           font-weight: bold;
            text-align: center;
-           padding: 14px 36px;
+           padding: 14px 46px;
            text-decoration: none;
            font-size: 17px;
        }
 
        /* Add an active class to highlight the current page */
        .active {
-           background-color: #033063;
-           color: white;
+           background-color: #FF875C;
+           color: #0D026D !important;
        }
 
        .navbar a:hover,
        .dropdown:hover .dropbtn {
-           background-color: #333333f6;
-           color: white;
+           background-color: #FF875C;
+           color: #0D026D;
        }
 
        /* Hide the link that should open and close the navbar on small screens */
@@ -46,7 +47,8 @@
            font-size: 17px;
            border: none;
            outline: none;
-           color: white;
+           color: #FFDECB;
+           font-weight: bold;
            padding: 14px 16px;
            background-color: inherit;
            font-family: inherit;
@@ -86,7 +88,7 @@
        }
 
        /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the navbar (.icon) */
-       @media screen and (max-width: 800px) {
+       @media screen and (max-width: 900px) {
 
            .navbar {
                display: block;
