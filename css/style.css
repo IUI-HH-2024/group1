@@ -96,6 +96,11 @@ nav {
     border-radius: 20px;
 }
 
+.response a {
+    color: white;
+    text-decoration: none;
+}
+
 .two-third-column {
     width: 64.66%;
 }
