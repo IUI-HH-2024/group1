@@ -98,7 +98,7 @@ nav {
 
 .response a {
     color: white;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .two-third-column {
