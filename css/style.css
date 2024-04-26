@@ -8,7 +8,7 @@ body {
     padding: 0px;
     margin: 0px;
     background-color: rgb(255, 222, 203);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Lato, Verdana, Geneva, Tahoma, sans-serif;
     line-height: 26px;
     color: #0D026D;
 }
@@ -171,8 +171,8 @@ nav {
 
 footer {
     grid-area: footer;
-    background-color: rgb(25, 38, 82);
-    color: white;
+    background-color: rgb(255, 135, 92);
+    color: rgb(13, 2, 109);
     padding: 20px;
     margin-top: 20px;
     border-radius: 20px;
