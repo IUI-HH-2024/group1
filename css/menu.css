@@ -106,11 +106,7 @@
                float: right;
                display: block;
            }
-
-           .navbar a.icon {
-               background-color: none !important;
-           }
-
+              
            /* The "responsive" class is added to the navbar with JavaScript when the user clicks on the icon. This class makes the navbar look good on small screens (display the links vertically instead of horizontally) */
            .navbar.responsive {
                position: fixed;
@@ -155,5 +151,4 @@
 
        .down {
            transform: rotate(45deg);
-           -webkit-transform: rotate(45deg);
        }
