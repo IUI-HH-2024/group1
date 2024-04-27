@@ -173,7 +173,6 @@ nav {
 }
 
 
-
 footer {
     grid-area: footer;
     background-color: rgb(25, 38, 82);
@@ -250,6 +249,25 @@ footer a {
 }
 
 
+#backToTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: #fff;
+    padding: 0px 0px;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+#backToTop img {
+    width: 70px;
+    transition: opacity 0.3s;
+}
+
+#backToTop.show {
+    display: block;
+}
 
 /*FIRST BREAK POINT === tablet */
 @media only screen and (max-width : 900px) {
