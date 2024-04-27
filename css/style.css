@@ -184,7 +184,7 @@ footer {
 }
 
 footer a {
-    color: #FF875C;
+    color: #FF875C !important;
 }
 
 .main-grid-container {
