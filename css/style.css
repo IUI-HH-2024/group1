@@ -131,7 +131,7 @@ nav {
     float: right;
     padding: 20px;
     border-radius: 20px;
-    background-color: #0D026Dc2;
+    background-color: #0d026d;
     /* Adjust as needed */
 }
 
@@ -212,7 +212,8 @@ header div {
     display: inline-block;
     padding: 10px 20px;
     background-color: #FF875C;
-    color: white;
+    color: #0d026d;
+    font-weight: bold;
     border-radius: 10px;
     text-decoration: none;
     margin-top: 10px;
