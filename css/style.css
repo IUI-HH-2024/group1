@@ -173,13 +173,18 @@ nav {
 }
 
 
+
 footer {
     grid-area: footer;
-    background-color: rgb(255, 135, 92);
-    color: rgb(13, 2, 109);
+    background-color: rgb(25, 38, 82);
+    color: white;
     padding: 20px;
     margin-top: 20px;
-    border-radius: 20px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+footer a {
+    color: #FF875C;
 }
 
 .main-grid-container {
