@@ -18,3 +18,12 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+window.addEventListener('scroll', function () {
+    var backToTop = document.getElementById('backToTop');
+    if (window.pageYOffset > 200) {
+        backToTop.classList.add('show');
+    } else {
+        backToTop.classList.remove('show');
+    }
+});
