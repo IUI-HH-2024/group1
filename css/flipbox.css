@@ -6,6 +6,7 @@
     /* Add some perspective to the flip box */
     padding: 10px;
     cursor: pointer;
+    touch-action: manipulation;
 }
 
 .flip-box-inner {
