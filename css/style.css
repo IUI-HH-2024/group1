@@ -122,7 +122,7 @@ nav {
     background-image: url('../images/banner.jpg');
     background-size: cover;
     background-position: center;
-    color: #fff;
+    color: #FFDECB;
     padding: 200px 40px;
 }
 
@@ -131,7 +131,7 @@ nav {
     float: right;
     padding: 20px;
     border-radius: 20px;
-    background-color: #0d026d;
+    background-color: #3928CC;
     /* Adjust as needed */
 }
 
