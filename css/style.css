@@ -175,8 +175,8 @@ nav {
 
 footer {
     grid-area: footer;
-    background-color: rgb(25, 38, 82);
-    color: white;
+    background-color: rgb(13, 2, 109);
+    color: rgb(255, 222, 203);
     padding: 20px;
     margin-top: 20px;
     border-radius: 20px 20px 0px 0px;
